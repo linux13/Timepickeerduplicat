@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Silencio</string>
+    <string name="nav_open">Navigation Open</string>
+    <string name="nav_closed">Navigation Closed</string>
+
+
+    <string name="help_text">Silencio is pretty simple to use.To create a new event press the + add button located at the top right corner which will show a new window for some information.
+To select time tap twice in start time and end time field.
+
+\n\nTo save an event fill up the required field then press the tick button located at the top right corner and to cancel
+press the X cross button at the top left corner.
+After saving an event it will appear in a list with the name,time and days.
+
+\n\nTap on the event to edit or delete.
+
+\n\nThere have a switch associated with each event by which one can control an event.
+There is also a navigation drawer with some contents incuding themes,communication,help,exit;
+
+\n\nThanks:)
+    </string>
+
+    <string name="bangla_help">
+\n\nসিলিনসিও ব্যবহার করা খুবই সহজ।একটি নতুন ইভেন্ট তৈরী করার জন্য উপরের ডান কোনায় + বাটন টি চাপুন এটি কিছু তথ্যের জন্য নতুন উইন্ডও দেখাবে।
+সময় নিরধারণের জন্য স্টার্ট টাইম এবং ইন্ড টাইম ক্ষেত্রে দুইবার চাপুন।
+
+\n\nকোনও ইভেন্ট সংরক্ষণ করার জন্য প্রয়োজনীয় ক্ষেত্রটি পূরণ করুন পরে উপরের ডান কোণায় অবস্থিত টিক বাটন চাপুন এবং কেন্সেল করতে উপরের বাম কোণের  X বাটন চাপুন।
+সংরক্ষণ করার পর ইভেন্টটি নাম,সময় এবং দিন সহ একটি লিস্টে থাকবে।
+
+\n\nইডিট এবং ডিলিট করার জন্য ইভেন্টে স্পর্শ করুন।
+
+\n\nপ্রত্যেকটি ইভেন্ট এর সাথে একটি করে সুইচ আছে যা দিয়ে একজন ইভেন্টটি কন্ট্রল করতে পারবে।
+একটি ন্যাভিগেশন ড্রয়ার আছে যেখানে থেমস,কমিউনিকেশন,হেল্প,ইক্সিট নামে কিছু কন্টেনটস আছে।
+
+\n\nধন্যবাদ:)
+    </string>
+
+    <string name="asfak">&#160;Name : Md Asfak Hussain Shafi
+        \n Email : asfaklus2@gmail.com
+        \n Department : CSE
+        \n Institution : Leading University
+    </string>
+    <string name="sunny">
+          &#160; Name : Sunny Saha
+        \n Email : scsahasunny@gmail.com
+        \n Department : CSE
+        \n Institution : Leading University
+    </string>
+    <string name="husain">
+         &#160;Name : Husain Ahmad
+        \n Email : husainlus467@gmail.com
+        \n Department : CSE
+        \n Institution : Leading University
+    </string>
+</resources>
