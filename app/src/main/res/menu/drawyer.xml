@@ -48,7 +48,7 @@
 
                 android:id="@+id/feedbackId"
                 android:icon="@drawable/ic_feedback"
-                android:title="FeedBack">
+                android:title="Survey">
 
             </item>
 

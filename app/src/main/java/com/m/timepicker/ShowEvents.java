@@ -73,6 +73,14 @@ public class ShowEvents extends AppCompatActivity implements NavigationView.OnNa
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        AppRate.with(this)
+//                .setInstallDays(1) // show rating bar after days of install
+//                .setLaunchTimes(1) // show when the app run one times
+//                .setRemindInterval(2) // if the user select remind me later than it show agian after given days
+//                .monitor(); // to monitor the functions
+//
+//        AppRate.showRateDialogIfMeetsConditions(this); // to show the dialog box according to monitor
+//        AppRate.with(this).clearAgreeShowDialog(); // if the user select
 
         if (getThemes()) setTheme(R.style.MyTheme3);
         else setTheme(R.style.MyTheme2);
@@ -490,48 +498,10 @@ public class ShowEvents extends AppCompatActivity implements NavigationView.OnNa
 
         switch (item.getItemId()) {
             case R.id.feedbackId:
+                startActivity(new Intent(ShowEvents.this,Survey.class));
 
-
-                final Dialog dialog = new Dialog(ShowEvents.this);
-                dialog.setContentView(R.layout.feedback);
-
-                final EditText name = dialog.findViewById(R.id.editnameId);
-                final EditText message = dialog.findViewById(R.id.editmessageId);
-                ImageView canceldialog = (ImageView) dialog.findViewById(R.id.canceldialog);
-                Button send = dialog.findViewById(R.id.sendfeedback);
-
-                dialog.setCancelable(false);
-
-                send.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if (!name.getText().toString().isEmpty() && !message.getText().toString().isEmpty()) {
-
-                            String text = name.getText().toString();
-                            String feedback = message.getText().toString();
-                            Intent intent = new Intent(Intent.ACTION_SEND);
-                            intent.setType("message/rfc822"); // remember to open email apps
-                            intent.putExtra(Intent.EXTRA_EMAIL, new String[]{"scsahasunny@gmail.com"});
-                            intent.putExtra(Intent.EXTRA_SUBJECT, "Feedback From Silencio");
-                            intent.putExtra(Intent.EXTRA_TEXT, "Name: " + text + "\n Message: " + feedback);
-                            startActivity(Intent.createChooser(intent, "Choose app to send Email"));
-                        } else {
-                            Toast.makeText(ShowEvents.this, "You should fillup all the fields", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-
-                canceldialog.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        dialog.dismiss();
-                    }
-                });
-
-                dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                dialog.show();
-//permission if
-                break;
+//shared
+            break;
         }
         switch (item.getItemId()) {
             case R.id.shareId:
